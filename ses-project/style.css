@@ -1,0 +1,449 @@
+/* --------global----------*/
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Raleway:wght@200;300&display=swap');
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+  overflow-x: hidden;
+  max-width: 100%;
+  font-family: 'Open Sans'; 
+}
+.space{
+  margin-bottom: 2rem;
+  color: #FFFFFF;
+}
+
+.hackeri{
+    width: 100%;
+}
+.msc-text{
+    font-family: 'Open Sans'; 
+    font-weight: 800;
+    font-size: 48px;
+    color: #000000;
+    margin-top: 2rem;
+    line-height: 60px;
+   
+    
+}
+.msc-sub-text{
+    font-family: 'Open Sans'; 
+    font-size: 22px; 
+    color: #000000;
+   /* font-weight: bold;*/
+   font-weight: 600;
+    margin-top: 0.6rem;
+}
+/*.right-side{margin-left: 4rem;}*/
+.current-work{
+    margin-right: 3rem;
+    font-family: 'Open Sans';
+    font-size: 13px; 
+  }
+  .yes {
+    font-family: 'Open Sans'; 
+    font-size: 13px;
+    margin-left: 1rem;
+  }
+  form .txtt_field{
+    position: relative;
+    border-bottom: 0.1px solid #5A5959;
+    /*margin: 7px 0;*/
+    margin-top: 16px;
+  }
+  .sec-one{
+    margin-bottom: 2rem;
+  }
+/*--------form----------------------------------*/
+
+.center{
+   position: relative;
+   margin-top: 8rem;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%);
+    width: 411px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 8px 6px rgba(0.01,0,0.01,0.08);
+  }
+  .center h1{
+    text-align: center;
+    padding: 20px 0;
+   /* border-bottom: 1px solid silver;*/
+  }
+  .center form{
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+    
+  }
+  form .txt_field{
+    position: relative;
+    border-bottom: 0.4px solid #5A5959;
+    margin: 7px 0;
+    
+  }
+  .txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    outline: none;
+    font-family: 'Open Sans'; 
+  }
+  .txt_field label{
+    position: absolute;
+    top: 80%;
+    left: 1px;
+    color: #000000;
+    transform: translateY(-50%);
+    font-size: 13px;
+    pointer-events: none;
+    transition: .5s;
+    font-family: 'Open Sans'; 
+  }
+  .txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 0.2px;
+    background: #5A5959;
+    
+    transition: .5s;
+  }
+  .txt_field input:focus ~ label,
+  .txt_field input:valid ~ label{
+    top: -1px;
+    color: transparent;
+    
+  }
+  .txt_field input:focus ~ span::before,
+  .txt_field input:valid ~ span::before{
+    width: 100%;
+  }
+  /*.pass{
+    margin: -5px 0 20px 5px;
+    color: #a6a6a6;
+    cursor: pointer;
+  }
+  .pass:hover{
+    text-decoration: underline;
+  }*/
+  input[type="submit"]{
+    width: 100%;
+    height: 36px;
+    border: 1px solid;
+    background:  #EC164A;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #e9f4fb;
+    font-weight: 500;
+    cursor: pointer;
+    outline: none;
+  }
+  input[type="submit"]:hover{
+    border-color: #EC164A;
+    transition: .5s;
+   
+  }
+  .signup_link{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: #666666;
+  }
+  .signup_link a{
+    color: #2691d9;
+    text-decoration: none;
+  }
+  .signup_link a:hover{
+    text-decoration: underline;
+  }
+  .yyes {
+    height: 15px;
+    width: 15px;
+  }
+  .table{margin-top: -30px;}
+  .schedule{
+    font-family: 'Open Sans';
+    color: #1883C4;
+    justify-content: center;
+    margin-left: 3rem;
+   margin-top: 1rem;
+   font-size: 1.4rem;
+   font-weight: 600;
+  }
+  .from-sing{
+    text-align: center;
+    margin-left: 5rem;
+  }
+  .last-text{
+    font-size: 10px;
+  }
+  .sub-div{
+   margin-bottom: 0.7rem;
+  }
+  .information{
+    display: flex;
+    column-gap: 0.2rem;
+  }
+  /*.fa-asterisk{
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: -3rem;
+  }*/
+  .astric-text{
+    font-size: 10px;
+  }
+  .start{
+    font-size: 8.2px;
+  }
+  /**********************hide /show*****************/
+ :focus{outline: none;}
+ .sxt_field{
+ /* float: left;*/
+  width: 100%;
+  margin: 4px 0.1%;
+  position: relative;
+ }
+ input[type="text"]{
+  font-size: 13px;
+  color: #000000;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+ }
+ .effect{
+  border: 0;
+  padding: 6px;
+  border-bottom: 1px solid #5A5959;
+ }
+ .effect ~ .focus-border{
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 0; height: 0;
+  background-color: #1883C4;
+  transition: 0.4s;
+ }
+ .effect:focus ~ .focus-border{
+  width: 100%;
+  transition: 0.4s;
+ }
+ .err{
+  color: #EC164A;
+  font-size: 13px;
+  display: none;
+ }
+ 
+
+ 
+  /**********************hide /show end*****************/
+/*-------------------------------form------*/
+/*-----sec-two----*/
+.first-para, .second-para{
+    font-size: 35px;
+    font-weight: 500;
+    color: #000000;
+}
+.spn-first-para{
+    font-size: 40px;
+    font-weight: 600; 
+    color: #000000;
+}
+.spn-first-1-para{
+    font-size: 42px;
+    font-weight: 800;
+    color: #000000; 
+}
+.first-dtl{
+    margin-top: 3rem;
+    margin-bottom: 3.8rem;
+    line-height: 4rem;
+}
+/*-----sec-three3---*/
+.benefits-header{
+    font-size: 42px;
+    color: #000000;
+    font-weight: 600;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    margin-left: -1rem;
+}
+.image-sin{
+    margin-top: 4rem;
+}
+.check-icon{
+    font-size: 20px;
+    
+}
+.benefits-sub{
+    line-height: 21px;
+   
+}
+.icon-text{
+    margin-left: 1.5rem;
+    font-size: 22px;
+    font-weight: 500;
+    color: #000000;
+}
+.img-sing{
+    width: 100%;
+}
+.mapp{
+    width: 83%;
+    margin-top: 0.8rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+/*--------sec-4-----*/
+.details-sec2{
+    margin-bottom: 5rem;
+}
+/*------sec-5------*/
+.home-less-first{
+    font-size: 42px;
+    font-weight: 600;
+    color: #000000;
+    text-align: left;
+    margin-top: 3.2rem;
+    margin-bottom: 2.1rem;
+}
+.home-less-scnd{
+    font-size: 36px;
+    font-weight: 500;
+    color: #000000;
+    text-align: left;
+}
+.hrs-mins-list{
+    font-size: 25px;
+    font-weight: 500;
+    color: #000000;
+    margin-left: 2rem;
+    line-height: 24px;
+    margin-top: 2.5rem;
+    line-height: 33px;
+}
+/*.map{
+    width: 60%;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}*/
+.name-list{margin-bottom: 0.4rem;
+    margin-right: 4rem;
+    line-height: 43px;
+}
+.hrs-min{
+    margin-left: 3rem;
+}
+
+/*-------------------------*/
+.details-sec1{
+    /*margin-top: -14rem;*/
+}
+.details-sec-nw{
+  /* margin-top: -14rem;*/
+   margin-bottom: 4rem;
+}
+/*-------------------------*/
+/*-------------------------*/
+@media only screen and (max-width:500px){
+    .msc-text{ 
+        font-weight: 900;
+        font-size: 30px;
+        text-align: center;
+    }
+    .msc-sub-text{
+        margin-left: 2rem; 
+        font-size: 22px; 
+        font-weight: 600;
+        margin-top: 1rem;
+    }
+    .hackeri{
+        width: 100%;
+        text-align: center;
+    }
+    .right-side{
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
+    }
+    .center{
+        width: 400px;
+    }
+    /*-----sec-two----*/
+    .first-para, .second-para{
+        font-size: 14px;
+        font-weight: 500;
+        color: #000000;
+    }
+    .spn-first-para{
+        font-size: 17px;
+        font-weight: 700; 
+        color: #000000;
+    }
+    .spn-first-1-para{
+        font-size: 19px;
+        font-weight: 800;
+        color: #000000; 
+    }
+    .first-dtl{
+        margin-top: 1rem;
+        margin-bottom: 1.5rem;
+        line-height: 2rem;
+    }
+    /*-----sec-3----*/
+    .benefits-header{
+        margin-left: 2rem;
+    }
+    .benefits-sub{
+        margin-left: 1rem;
+    }
+    /*-----sec-4---*/
+    .map{
+        text-align: center;
+    }
+    .map{
+        width: 80%;
+        margin-top: 1.5rem;
+      /*  margin-left: 0rem;*/
+      text-align: center;
+      margin-bottom: 0.7rem;
+    }
+    .hrs-mins-list{
+        font-size: 18px;
+        font-weight: 500;
+        color: #000000;
+        margin-left: 1rem;
+       
+        margin-top: 2.5rem;
+        line-height: 20px;
+    }
+    .home-less-scnd{
+        font-size: 22px;
+        font-weight: 500;
+        color: #000000;
+        margin-left: 0.5rem;
+    }
+    .home-less-first{
+      margin-left: 0.5rem;
+    }
+   
+  }
+  @media only screen and (max-width:800px){
+    
+   }
